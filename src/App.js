@@ -34,7 +34,7 @@ class App extends React.Component {
 
   get selectedQuote() {
     if (!this.state.quotes.length || !Number.isInteger(this.state.selectedQuoteIndex)) {
-      return;
+      return undefined;
     }
     return this.state.quotes[this.state.selectedQuoteIndex];
   }
